@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import 'bulma/css/bulma.css'
 
 class WeatherService extends Component{
   constructor(){
@@ -64,7 +65,7 @@ class App extends Component {
          
          {
            PLACES.map((place,index)=>(
-             <button key={index}
+             <button class='button is-primary' key={index}
                 onClick={()=>{
                   this.setState({activePlace:index})
                 }}>
